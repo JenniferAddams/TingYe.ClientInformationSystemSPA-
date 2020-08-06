@@ -1,0 +1,8 @@
+<p>employees works!</p>
+<ul class='list-unstuled p-2'>
+    <li *ngFor="let employe of employee" >
+<a [routerLink]="[ 'movie/genre', employe.id ]">
+{{employe.name}}
+</a>
+    </li>
+</ul>
